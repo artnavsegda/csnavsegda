@@ -1,0 +1,2 @@
+# csnavsegda
+C# playground projects
