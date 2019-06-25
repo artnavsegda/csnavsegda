@@ -7,6 +7,8 @@ class Program
 	int i;
 	i = 42 + 20;
         Console.WriteLine(i);
+	i++;
+        Console.WriteLine(i);
 	i = 42 - 20;
         Console.WriteLine(i);
 	i = 42 * 2;
