@@ -10,5 +10,6 @@ class Program
 	float x;
 	x = 26.32F;
         Console.WriteLine(x);
+        Console.WriteLine(x.ToString());
     }
 }
