@@ -11,5 +11,11 @@ class Program
 	x = 26.32F;
         Console.WriteLine(x);
         Console.WriteLine(x.ToString());
+	string f;
+       	f = "hello";
+        Console.WriteLine(f);
+	char y;
+	y = 'x';
+        Console.WriteLine(y);
     }
 }
