@@ -7,5 +7,8 @@ class Program
 	int i;
 	i = 42;
         Console.WriteLine(i);
+	float x;
+	x = 26.32F;
+        Console.WriteLine(x);
     }
 }
