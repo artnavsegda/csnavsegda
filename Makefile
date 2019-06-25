@@ -4,6 +4,8 @@
 	csc $<
 
 
+all:	hello.exe
+
 clean:
 	del *.exe
 
