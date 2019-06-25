@@ -12,8 +12,9 @@ class Program
         Console.WriteLine(x);
         Console.WriteLine(x.ToString());
 	string f;
-       	f = "hello";
+       	f = "32";
         Console.WriteLine(f);
+        Console.WriteLine(System.Int32.Parse(f));
 	char y;
 	y = 'x';
         Console.WriteLine(y);
