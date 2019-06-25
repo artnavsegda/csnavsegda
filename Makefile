@@ -3,3 +3,7 @@
 .cs.exe:
 	csc $<
 
+
+clean:
+	del *.exe
+
