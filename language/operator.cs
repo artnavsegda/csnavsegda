@@ -12,7 +12,7 @@ class Program
         Console.WriteLine(x);
         Console.WriteLine(x.ToString());
 	string f;
-       	f = "hello";
+       	f = "hello" + "world";
         Console.WriteLine(f);
 	char y;
 	y = 'x';
