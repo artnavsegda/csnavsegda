@@ -4,7 +4,7 @@
 	csc $<
 
 
-all:	hello.exe
+all:	hello.exe variable.exe
 
 clean:
 	del *.exe
