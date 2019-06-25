@@ -17,5 +17,7 @@ class Program
 	char y;
 	y = 'x';
         Console.WriteLine(y);
+	var o = 24;
+        Console.WriteLine(o);
     }
 }
