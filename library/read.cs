@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-	 using (StreamWriter sw = new StreamWriter("test.txt"))
+	 using (StreamReader sr = new StreamReader("test.txt"))
 	 {
-              sw.WriteLine("Hello World!");
+	      Console.WriteLine(sr.ReadToEnd());
 	 }
     }
 }
