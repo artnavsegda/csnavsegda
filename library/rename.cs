@@ -5,6 +5,6 @@ class Program
 {
     static void Main(string[] args)
     {
-	    File.Delete("test2.txt");
+	    File.Move("test.txt", "test2.txt");
     }
 }

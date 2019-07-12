@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-	 using (StreamReader sr = new StreamReader("test.txt"))
+	 using (StreamReader sr = new StreamReader("test2.txt"))
 	 {
 	      Console.WriteLine(sr.ReadToEnd());
 	 }
