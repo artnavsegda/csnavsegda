@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Net;
 using System.Net.Sockets;
 
@@ -10,6 +11,10 @@ class Program
 		IPEndPoint endpoint = new IPEndPoint(myaddr, 8888);
 		Socket mysock = new Socket(SocketType.Stream, ProtocolType.Tcp);
 		mysock.Connect(endpoint);
+		if (mysock.Connected)
+		{
+			mysock.Send(Encoding.ASCII.GetBytes("hello"));
+		}
 		Console.WriteLine("Hello World!");
 	}
 }
