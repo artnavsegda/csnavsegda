@@ -18,7 +18,7 @@ class Program
 		}
 		catch (Exception e)
 		{
-			Console.WriteLine("error");
+			Console.WriteLine(e);
 		}
 	}
 	static void Main(string[] args)
