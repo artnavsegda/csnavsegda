@@ -52,10 +52,10 @@ class Server {
 
                 stream.Write(response, 0, response.Length);
             } else {
-                bool fin = (bytes[0] & 0b10000000) != 0,
-                    mask = (bytes[1] & 0b10000000) != 0; // must be true, "All messages from the client to the server have this bit set"
+                bool fin = (bytes[0] & 0x80) != 0,
+                    mask = (bytes[1] & 0x80) != 0; // must be true, "All messages from the client to the server have this bit set"
 
-                int opcode = bytes[0] & 0b00001111, // expecting 1 - text message
+                int opcode = bytes[0] & 0xf, // expecting 1 - text message
                     msglen = bytes[1] - 128, // & 0111 1111
                     offset = 2;
 
