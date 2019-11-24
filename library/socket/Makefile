@@ -4,7 +4,7 @@
 	csc $<
 
 
-all:	client.exe hello.exe resolve.exe server.exe updprcv.exe webclient.exe websocket-server.exe
+all:	client.exe hello.exe resolve.exe server.exe udprecv.exe websocket-server.exe
 
 clean:
 	del *.exe
