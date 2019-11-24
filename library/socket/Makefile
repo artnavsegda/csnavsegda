@@ -4,8 +4,7 @@
 	csc $<
 
 
-all:	write.exe rename.exe read.exe delete.exe
+all:	client.exe hello.exe resolve.exe server.exe updprcv.exe webclient.exe websocket-server.exe
 
 clean:
 	del *.exe
-
