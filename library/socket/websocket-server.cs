@@ -10,8 +10,8 @@ using System.Text.RegularExpressions;
 
 class Server {
     public static void Main() {
-        string ip = "127.0.0.1";
-        int port = 8080;
+        string ip = "192.168.0.107";
+        int port = 80;
         var server = new TcpListener(IPAddress.Parse(ip), port);
 
         server.Start();
