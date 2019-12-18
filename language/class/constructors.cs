@@ -2,6 +2,10 @@ using System;
 
 public class myclass
 {
+  myclass()
+  {
+    Console.WriteLine("Class created");
+  }
   public int i;
   public void printi()
   {
