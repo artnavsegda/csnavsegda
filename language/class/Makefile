@@ -4,7 +4,7 @@
 	csc $<
 
 
-all: class.exe constructors.exe class_generics.exe
+all: class_generics.exe class.exe constructors.exe inheritance.exe nested.exe overload.exe polymorphism.exe private.exe staticmethod.exe this.exe
 
 clean:
 	del *.exe
