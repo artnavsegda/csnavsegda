@@ -4,7 +4,7 @@
 	csc $<
 
 
-all: class.exe
+all: class.exe constructors.exe
 
 clean:
 	del *.exe
