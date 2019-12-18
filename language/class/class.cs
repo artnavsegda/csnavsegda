@@ -5,14 +5,16 @@ class Program
   static void Main(string[] args)
   {
     myclass myobj = new myclass();
-    myobj.printhello();
+    myobj.i = 10;
+    myobj.printi();
   }
 }
 
 public class myclass
 {
-  public void printhello()
+  public int i;
+  public void printi()
   {
-    Console.WriteLine("Hello World!");
+    Console.WriteLine(i);
   }
 }
