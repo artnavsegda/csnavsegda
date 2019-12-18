@@ -1,35 +1,29 @@
 using System;
 
-public delegate void EventHandler();
-
-class Program
+class Test
 {
-    public static event EventHandler _show;
+    public event EventHandler MyEvent
+    {
+        add
+        {
+            Console.WriteLine ("add operation");
+        }
+
+        remove
+        {
+            Console.WriteLine ("remove operation");
+        }
+    }
 
     static void Main()
     {
-        // Add event handlers to Show event.
-        _show += new EventHandler(Dog);
-        _show += new EventHandler(Cat);
-        _show += new EventHandler(Mouse);
-        _show += new EventHandler(Mouse);
+        Test t = new Test();
 
-        // Invoke the event.
-        _show.Invoke();
+        t.MyEvent += new EventHandler (t.DoNothing);
+        t.MyEvent -= null;
     }
 
-    static void Cat()
+    void DoNothing (object sender, EventArgs e)
     {
-        Console.WriteLine("Cat");
-    }
-
-    static void Dog()
-    {
-        Console.WriteLine("Dog");
-    }
-
-    static void Mouse()
-    {
-        Console.WriteLine("Mouse");
     }
 }
