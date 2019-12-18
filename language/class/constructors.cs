@@ -6,10 +6,20 @@ public class myclass
   {
     Console.WriteLine("Class created");
   }
-  public int i;
-  public void printi()
+
+  public myclass(myclass prevclass)
   {
-    Console.WriteLine(i);
+    Console.WriteLine("Class copied");
+  }
+
+  public myclass(int i)
+  {
+    Console.WriteLine("Class created with parameter " + i);
+  }
+
+  ~myclass()
+  {
+    Console.WriteLine("Class destroyed");
   }
 }
 
@@ -18,7 +28,7 @@ class Program
   static void Main(string[] args)
   {
     myclass myobj = new myclass();
-    myobj.i = 10;
-    myobj.printi();
+    myclass myobj2 = new myclass(myobj);
+    myclass myobj3 = new myclass(10);
   }
 }
