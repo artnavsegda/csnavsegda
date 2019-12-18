@@ -3,7 +3,7 @@ using System;
 public class myclass
 {
   public int i;
-  public void printsome()
+  public virtual void printsome()
   {
     Console.WriteLine(i);
   }
@@ -12,7 +12,7 @@ public class myclass
 public class otherclass : myclass
 {
   public int x;
-  public new void printsome()
+  public override  void printsome()
   {
     Console.WriteLine(i*x);
   }
