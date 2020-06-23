@@ -5,7 +5,7 @@ using System.Text;
 
 namespace hsvtorgb
 {
-    class Program
+    public  class HSVtoRGB
     {
         public ushort Red { get; set; }
 
@@ -71,9 +71,51 @@ namespace hsvtorgb
                 n = 1.0;
             return (ushort)(n * (double)ushort.MaxValue);
         }
-
+    }
+    class Program
+    {
         static void Main(string[] args)
         {
+            HSVtoRGB myHSVtoRGB = new HSVtoRGB();
+            if (args.Length == 3)
+            {
+                myHSVtoRGB.Hue = UInt16.Parse(args[0]);
+                myHSVtoRGB.Saturation = UInt16.Parse(args[1]);
+                myHSVtoRGB.Value = UInt16.Parse(args[2]);
+
+                Console.WriteLine("hue: " + myHSVtoRGB.Hue);
+                Console.WriteLine("saturation: " + myHSVtoRGB.Saturation);
+                Console.WriteLine("value: " + args[2]);
+            }
+            Console.WriteLine("Hello World!");
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
