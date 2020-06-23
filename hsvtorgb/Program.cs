@@ -54,8 +54,8 @@ namespace hsvtorgb
         public void CalculateRGB()
         {
             double h = (double)this.Hue;
-            double S = (double)this.Saturation;
-            double V = (double)this.Value;
+            double S = (double)this.Saturation / 100;
+            double V = (double)this.Value / 100;
 
           double H = h;
           while (H < 0) { H += 360; };
@@ -141,9 +141,9 @@ namespace hsvtorgb
                 break;
             }
           }
-          this.Red = (ushort)R;
-          this.Green = (ushort)G;
-          this.Blue = (ushort)B;
+          this.Red = (ushort)(R * 65535);
+          this.Green = (ushort)(G * 65535);
+          this.Blue = (ushort)(B * 65535);
         }
 
         private double ScaleRBG(double value)
