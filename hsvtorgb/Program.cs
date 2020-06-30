@@ -171,20 +171,37 @@ namespace hsvtorgb
     {
         static void Main(string[] args)
         {
+            //HSVtoRGB myHSVtoRGB = new HSVtoRGB();
+            //if (args.Length == 3)
+            //{
+            //    myHSVtoRGB.Hue = UInt16.Parse(args[0]);
+            //    myHSVtoRGB.Saturation = UInt16.Parse(args[1]);
+            //    myHSVtoRGB.Value = UInt16.Parse(args[2]);
+
+            //    Console.WriteLine("hue: " + myHSVtoRGB.Hue);
+            //    Console.WriteLine("saturation: " + myHSVtoRGB.Saturation);
+            //    Console.WriteLine("value: " + myHSVtoRGB.Value);
+
+            //    myHSVtoRGB.CalculateRGB();
+
+            //    Console.WriteLine("R: " + myHSVtoRGB.Red + " G: " + myHSVtoRGB.Green + " B: " + myHSVtoRGB.Blue);
+            //}
+            //Console.WriteLine("Hello World!");
+
             HSVtoRGB myHSVtoRGB = new HSVtoRGB();
             if (args.Length == 3)
             {
-                myHSVtoRGB.Hue = UInt16.Parse(args[0]);
-                myHSVtoRGB.Saturation = UInt16.Parse(args[1]);
-                myHSVtoRGB.Value = UInt16.Parse(args[2]);
+                myHSVtoRGB.Red = UInt16.Parse(args[0]);
+                myHSVtoRGB.Green = UInt16.Parse(args[1]);
+                myHSVtoRGB.Blue = UInt16.Parse(args[2]);
 
-                Console.WriteLine("hue: " + myHSVtoRGB.Hue);
-                Console.WriteLine("saturation: " + myHSVtoRGB.Saturation);
-                Console.WriteLine("value: " + myHSVtoRGB.Value);
+                Console.WriteLine("red: " + myHSVtoRGB.Red);
+                Console.WriteLine("green: " + myHSVtoRGB.Green);
+                Console.WriteLine("blue: " + myHSVtoRGB.Blue);
 
-                myHSVtoRGB.CalculateRGB();
+                myHSVtoRGB.CalculateHSV();
 
-                Console.WriteLine("R: " + myHSVtoRGB.Red + " G: " + myHSVtoRGB.Green + " B: " + myHSVtoRGB.Blue);
+                Console.WriteLine("Hue: " + myHSVtoRGB.Hue + " Saturation: " + myHSVtoRGB.Saturation + " Value: " + myHSVtoRGB.Value);
             }
             Console.WriteLine("Hello World!");
         }
