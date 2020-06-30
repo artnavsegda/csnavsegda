@@ -156,7 +156,7 @@ namespace hsvtorgb
         private ushort ScaleHue(double h)
         {
             double num = 0.28;
-            return (ushort)(655.0 * (h * num));
+            return (ushort)(3.6 * (h * num));
         }
 
         private ushort Scale(double n)
@@ -164,7 +164,7 @@ namespace hsvtorgb
             n = Math.Round(n, 2);
             if (n > 1.0)
                 n = 1.0;
-            return (ushort)(n * (double)ushort.MaxValue);
+            return (ushort)(n * (double)100);
         }
     }
     class Program
