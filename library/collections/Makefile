@@ -4,7 +4,7 @@
 	csc $<
 
 
-all:	arraylist.exe
+all:	arraylist.exe hashtable.exe
 
 clean:
 	del *.exe
