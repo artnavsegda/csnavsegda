@@ -24,7 +24,7 @@ namespace SecretSharp
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.Write($"{array[i]:X2}");
+                Console.Write($"{array[i]:x2}");
             }
             Console.WriteLine();
         }
