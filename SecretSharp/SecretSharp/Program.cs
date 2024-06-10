@@ -14,7 +14,17 @@ namespace SecretSharp
         {
             using (SHA256 mySHA256 = SHA256.Create())
             {
-                byte[] hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes("ghghdhdfhdfh"));
+                String secret = "53Cr3t";
+                String guid = "936DE051-3022-4217-834B-F5BDBFDBEE3A";
+                String version = "4.0.9";
+                String dayOfMouth = "10";
+
+                String clearString = secret + ':' + guid + ':' + version + ':' + dayOfMouth;
+                Console.WriteLine("Clear value: " + clearString);
+
+                byte[] hashValue = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(clearString));
+
+                Console.Write("Hashed value: ");
                 PrintByteArray(hashValue);
             }
         }
